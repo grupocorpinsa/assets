@@ -1,0 +1,1 @@
+Imagenes de marca servidas por GitHub Pages. No renombrar ni mover los archivos de esta carpeta: sus URL estan incrustadas en las firmas de correo de todos los colaboradores, incluidos los correos ya enviados.
