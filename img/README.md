@@ -1,4 +1,4 @@
-# Logotipos — Grupo Corpinsa
+# Marca — Grupo Corpinsa
 
 Archivos oficiales de marca. Cualquier pieza que represente al Grupo debe tomarlos de
 aquí y no de una copia suelta.
@@ -85,6 +85,68 @@ El isotipo del óvalo no se usa suelto: siempre acompaña a la palabra.
 
 Deja alrededor del logotipo un área libre equivalente a la altura de su letra
 inicial, en los cuatro lados.
+
+## La mascota
+
+**Rigg, el castor constructor**, es la mascota del Grupo. El nombre viene de
+*rigger*: el que prepara y asegura la carga antes de que la grúa levante. Antes
+se llamó Rocky, Vigo y Corpín; si encuentras esos nombres en una pieza, está
+desactualizada.
+
+No sustituye al logo. El logo identifica a la empresa; Rigg acompaña y da la
+bienvenida. Nunca van los dos haciendo el mismo trabajo en la misma pieza.
+
+| Archivo | Formato | Peso | Cuándo |
+|---|---|---|---|
+| `rigg-cruzado-512.png` | 288 × 512, transparente | 170 KB | **Opción por defecto.** La pose oficial, de brazos cruzados |
+| `rigg-cruzado-256.png` | 144 × 256, transparente | 51 KB | Correo y firmas, donde el peso manda |
+| `rigg-saludo-1200.png` | 663 × 1200, transparente | 811 KB | Presentaciones y portadas. No lo uses en correo: pesa demasiado |
+| `rigg-saludo-512.png` | 283 × 512, transparente | 184 KB | Pantallas de bienvenida y de llegada |
+| `rigg-saludo-256.png` | 142 × 256, transparente | 57 KB | Correo y firmas |
+| `rigg-saludo.gif` | 420 × 504, 69 fotogramas | 3,4 MB | Saluda y vuelve a cruzar los brazos, en bucle. **Solo web o chat**: en un correo es inaceptable |
+| `rigg-cruzado.webp`, `rigg-saludo-base.webp`, `rigg-saludo-mano.webp` | 532 × 880 cada una | 134 KB las tres | Las capas de la animación de entrada. Ver abajo |
+
+### Dónde sí y dónde no
+
+| Sí | No |
+|---|---|
+| Pantallas de acceso y de bienvenida | Informes financieros y tablas de cifras |
+| Estados vacíos y confirmaciones | Pantallas de trabajo diario, que se usan ocho horas |
+| Material de seguridad y capacitación | Cabeceras institucionales, documentos legales, cotizaciones |
+
+Regla de bolsillo: si la pieza es para mirar una cifra y decidir, Rigg estorba.
+Si es de llegada o de pausa, ayuda.
+
+Es decorado: va con `alt=""`. Lo que la mascota diga en un globo tiene que
+existir también como texto de la pieza, porque un lector de pantalla no la ve y
+porque un dibujo no se puede copiar ni pegar.
+
+### Las tres capas de la animación
+
+Las tres comparten lienzo de 532 × 880 y se apilan sin coordenadas: una encima
+de otra ocupando lo mismo. `rigg-saludo-mano.webp` es solo la mano y gira sobre
+la muñeca, con el punto de giro en **17.03 % 30.87 %** del lienzo; el resto del
+cuerpo está en `rigg-saludo-base.webp`, y encima entra la pose de brazos
+cruzados cuando termina el saludo.
+
+Dos dibujos no son una animación: entre una pose y otra no hay nada dibujado, y
+el salto se disimula con un rebote corto. Si hace falta que un brazo baje de
+verdad, hay que encargar las poses intermedias.
+
+**Nada en bucle permanente** dentro de una aplicación: la entrada pasa una vez y
+termina quieta. Y con `prefers-reduced-motion`, la pieza queda en su estado
+final, no a medio camino.
+
+### Qué resolución hay de cada pose
+
+La pose de saludo viene de un original de 1420 × 2569 y aguanta cualquier
+tamaño. **La de brazos cruzados solo existe a 414 × 737**, así que 512 es su
+techo: no la amplíes más allá, igual que pasa con el logo de Tecnogrúas. Para
+una versión grande hay que volver a generarla con el prompt maestro del manual
+de marca de la mascota, que trae además las poses oficiales —pulgar arriba,
+señalando, con tablet, con planos, con radio, supervisando, con llave inglesa,
+enseñando seguridad— y las dos condiciones para que la imagen sirva después:
+**fondo blanco liso** y **cuerpo completo**, casco, cola y botas sin cortar.
 
 ## Cómo enlazarlos
 
